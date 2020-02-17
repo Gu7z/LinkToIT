@@ -6,14 +6,32 @@ import Navigation from './src/navigation'
 import { NativeRouter, Route, Link } from "react-router-native";
 
 import Linkedin from './src/routes/linkedin'
-import FaceBook from './src/routes/gh';
+import GitHub from './src/routes/gh';
+import WhatsApp from './src/routes/wpp';
+import FaceBook from './src/routes/fb';
 
 export default function App() {
   return (
     <NativeRouter>
       <View style={styles.container}>
+        <Route exact path="/" >
+          <View style={{display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center', paddingBottom: 100}} >
+            <Text style={{fontSize: 50, textAlign: "center", color: 'white'}} >
+              Bem Vindo ao LinkToIT
+            </Text>
+            <Text style={{fontSize: 18, textAlign: "center", color: 'white', padding: 50}} >
+              A sua plataforma para facilitar conexões
+            </Text>
+          </View>
+        </Route>
         <Route path="/linkedin">
           <Linkedin />
+        </Route>
+        <Route path="/github">
+          <GitHub />
+        </Route>
+        <Route path="/whatsapp">
+          <WhatsApp />
         </Route>
         <Route path="/facebook">
           <FaceBook />
