@@ -8,6 +8,8 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@unform/core": "^2.0.0",
+    "@unform/mobile": "^2.0.0",
     "expo": "~36.0.0",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
@@ -22,6 +24,15 @@
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "babel-preset-expo": "~8.0.0"
+  },
+  "expo": {
+    "name": "LinkToIt",
+    "icon": "./logo.png",
+    "version": "1.0.0",
+    "android": {
+      "package": "com.ferri.gustavo",
+      "versionCode": 1
+    }
   },
   "private": true
 }
