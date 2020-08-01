@@ -13,14 +13,14 @@ export default function GitHub() {
       qrValue="https://www.github.com/gu7z"
       array={[
         {
-          text: "Cancelar"
+          text: "Cancelar",
         },
         {
           text: "Ir até la",
           onPress: () => {
             Linking.openURL("https://www.github.com/gu7z");
-          }
-        }
+          },
+        },
       ]}
     />
   );

@@ -1,5 +1,12 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity, Alert } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  Alert,
+  Dimensions,
+} from "react-native";
 
 import QRCode from "react-native-qrcode-svg";
 
@@ -12,7 +19,7 @@ export default function WhatsApp({
   subTitleContent = "",
   array = [{ text: "Ok" }],
   qrValue = "",
-  size = 150
+  size = 150,
 }) {
   return (
     <FadeInView>
@@ -38,17 +45,17 @@ const styles = StyleSheet.create({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: 150
+    marginBottom: 150,
   },
 
   titleText: {
     color: "#FFF",
     fontSize: 50,
-    marginBottom: 100
+    marginBottom: 100,
   },
 
   text: {
     backgroundColor: "#FFF",
-    padding: 15
-  }
+    padding: 15,
+  },
 });

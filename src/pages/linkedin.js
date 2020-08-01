@@ -13,14 +13,14 @@ export default function Linkedin() {
       qrValue="https://www.linkedin.com/in/gustavo-ferri/"
       array={[
         {
-          text: "Cancelar"
+          text: "Cancelar",
         },
         {
           text: "Ir até la",
           onPress: () => {
             Linking.openURL("https://www.linkedin.com/in/gustavo-ferri/");
-          }
-        }
+          },
+        },
       ]}
     />
   );
