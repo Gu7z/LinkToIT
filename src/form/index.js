@@ -1,6 +1,11 @@
 import React, { useRef } from "react";
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
-import { Form } from "@unform/mobile";
+import {
+  View,
+  TouchableOpacity,
+  Text,
+  StyleSheet,
+  TextInput,
+} from "react-native";
 import Input from "./Input";
 
 export default function SignIn() {
@@ -12,14 +17,9 @@ export default function SignIn() {
   }
 
   return (
-    <Form label="Email" name="email" type="email">
-      <Input label="Senha" name="password" type="password" />
-      <Input label="Senha" name="password" type="password" />
-
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Submit</Text>
-      </TouchableOpacity>
-    </Form>
+    <View>
+      <TextInput></TextInput>
+    </View>
   );
 }
 

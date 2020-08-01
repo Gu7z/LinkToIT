@@ -5,21 +5,16 @@ import Linkedin from "./pages/linkedin";
 import Github from "./pages/gh";
 import Facebook from "./pages/fb";
 import Whatsapp from "./pages/wpp";
+import Home from "./pages/home";
 
 import { useSelector } from "react-redux";
 
 export default function Routes() {
-  const {
-    reducer: {
-      data: {
-        name,
-        social: { facebook },
-      },
-    },
-  } = useSelector((state) => state);
-
   return (
     <>
+      <Route exact path="/">
+        <Home />
+      </Route>
       <Route path="/linkedin">
         <Linkedin />
       </Route>
